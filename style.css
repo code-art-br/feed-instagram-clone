@@ -12,7 +12,7 @@ body{
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 2.5fr 1fr;
     grid-template-rows: 15vh 85vh;
     grid-template-areas: "h h" 
                         "m a"
@@ -44,7 +44,7 @@ main{
 }
 
 .UserStories{
-    width: 44vw;
+    width: 50vw;
     height: 16vh;
     background-color: #FFFFFF;
     border: 1px solid #DBDBDB;
@@ -52,4 +52,26 @@ main{
     justify-content: center;
     align-items: center;
     border-radius: 3px;
+}
+
+
+.userSection{
+    display: flex;
+    align-items: center;
+}
+
+.profileImg{
+    width: 77px;
+}
+
+#profileSectionImg{
+    width: 77px;
+    height: 77px;
+    border-radius: 60px;
+}
+
+.userInfo{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
 }
