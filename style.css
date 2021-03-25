@@ -12,8 +12,8 @@ body{
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 10vh 90vh;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 15vh 85vh;
     grid-template-areas: "h h" 
                         "m a"
 }
@@ -24,7 +24,32 @@ header{
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 4rem;
+    height: 3.7rem;
     background-color: #FFFFFF;
     border-bottom: 2px solid #F3F3F3;
+}
+
+header input[type=text]{
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    width: 13rem;
+    height: 1.7rem;
+    text-align: center;
+    background-color: #FAFAFA;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.UserStories{
+    width: 44vw;
+    height: 16vh;
+    background-color: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
 }
