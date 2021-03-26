@@ -45,6 +45,7 @@ nav img{
     width: 20px;
     height: 20px;
     margin: 0.4rem;
+    cursor: pointer;
 }
 
 main{
@@ -58,9 +59,31 @@ main{
     background-color: #FFFFFF;
     border: 1px solid #DBDBDB;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     border-radius: 3px;
+}
+
+.stories{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 2rem;
+    
+}
+
+.stories img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: 3px solid #D62B81;
+    cursor: pointer;
+}
+
+.stories a {
+    font-size: 9pt;
+    margin-top: 5px;
 }
 
 
