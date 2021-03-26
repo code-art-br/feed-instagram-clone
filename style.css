@@ -26,17 +26,25 @@ header{
     border-bottom: 2px solid #F3F3F3;   
     display: grid;
     align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    grid-template-columns: 1fr 2fr 0.5fr 2fr;
     grid-template-rows: 100%;
+    grid-template-areas: "logo pesquisa nada nav";
 }
 
 header input[type=text]{
     border: 1px solid #DBDBDB;
     border-radius: 3px;
-    width: 13rem;
+    width: 15rem;
     height: 1.7rem;
     text-align: center;
     background-color: #FAFAFA;
+}
+
+nav img{
+    width: 20px;
+    height: 20px;
+    margin: 0.4rem;
 }
 
 main{
