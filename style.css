@@ -27,9 +27,9 @@ header{
     display: grid;
     align-items: center;
     justify-content: center;
-    grid-template-columns: 1fr 2fr 0.5fr 2fr;
+    grid-template-columns: 1fr 2fr 1.2fr 0.3fr;
     grid-template-rows: 100%;
-    grid-template-areas: "logo pesquisa nada nav";
+    grid-template-areas: "logo pesquisa nav nada";
 }
 
 header input[type=text]{
@@ -42,8 +42,8 @@ header input[type=text]{
 }
 
 nav img{
-    width: 20px;
-    height: 20px;
+    width: 23px;
+    height: 23px;
     margin: 0.4rem;
     cursor: pointer;
 }
@@ -107,3 +107,47 @@ main{
     flex-direction: column;
     margin-left: 1rem;
 }
+
+
+
+.firstSection {
+    display: flex;
+    align-items: center;
+    color: grey;
+    width: 100%;
+    margin-top: 2rem;
+    font-size: 11pt;
+    font-weight: 600;
+}
+
+.firstSection a:first-child{
+    margin-right: 25%;
+}
+
+.firstSection a:last-child{
+    color: black;
+}
+
+.userSuggestionSection{
+    margin-top: 1rem;
+    display: flex;
+}
+
+.userSuggestionImg img{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+}
+
+.suggestionUserInfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.suggestionUserInfo:last-child{
+    color: grey;
+    font-size: 9pt;
+}
+
