@@ -8,11 +8,12 @@
 }
 
 body{
+    overflow-x: hidden;
     background-color: #FAFAFA;
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-columns: 2.5fr 1fr;
+    grid-template-columns: 2.7fr 1fr;
     grid-template-rows: 15vh 85vh;
     grid-template-areas: "h h" 
                         "m a"
@@ -30,6 +31,7 @@ header{
     grid-template-columns: 1fr 2fr 1.2fr 0.3fr;
     grid-template-rows: 100%;
     grid-template-areas: "logo pesquisa nav nada";
+    position: fixed;
 }
 
 header input[type=text]{
@@ -50,12 +52,18 @@ nav img{
 
 main{
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+aside{
+    margin-top: 5rem;
 }
 
+
 .UserStories{
-    width: 50vw;
-    height: 16vh;
+    min-width: 50vw;
+    min-height: 16vh;
     background-color: #FFFFFF;
     border: 1px solid #DBDBDB;
     display: flex;
@@ -151,3 +159,60 @@ main{
     font-size: 9pt;
 }
 
+.post{
+    width: 50vw;
+    background: white;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border: 1px solid #DBDBDB;
+    border-radius: 1px;
+}
+
+.postHeader{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 11pt;
+
+}
+
+.postHeader img{
+    width: 35px;
+    height: 35px;
+    border-radius: 40px;
+    margin-left: 1.5rem;
+    margin-right: 1rem;
+}
+
+.postContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+}
+
+.postContent img{
+    width: 100%;
+    height: auto;
+    border: 1px solid #DBDBDB;
+}
+
+.postNav{
+    width: 100%;
+    height: 2rem;
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+}
+
+.postNav img{
+    width: 23px;
+    height: 23px;
+    margin: 0.4rem;
+    cursor: pointer;
+}
+
+.postIcons{
+    margin-left: 1rem;
+}
