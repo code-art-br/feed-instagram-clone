@@ -216,3 +216,27 @@ aside{
 .postIcons{
     margin-left: 1rem;
 }
+
+.postComments{
+    height: 7rem;
+    border-bottom: 1px solid #DBDBDB;
+}
+
+.postComments strong{
+    cursor: pointer;
+}
+
+.likes{
+    display: flex;
+    align-items: center;
+    margin-left: 1.35rem;
+    margin-top: 10px;
+    font-size: 11pt;
+}
+
+.likes img{
+    width: 25px;
+    height: 25px;
+    border-radius: 30px;
+    margin-right: 0.5rem;
+}
